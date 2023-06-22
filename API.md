@@ -3,7 +3,7 @@ Sonos
 
 This module exports 4 items:
 
-    var sonos = require('sonos');
+    const sonos = require('sonos');
 
     // sonos.search - searches for Sonos devices on network
 
@@ -12,8 +12,8 @@ This module exports 4 items:
       device.currentTrack(console.log);
     });
 
-    // var s = new sonos.Sonos(host, [port]);
-    var s = new sonos.Sonos('192.168.2.17')
+    // const s = new sonos.Sonos(host, [port]);
+    const s = new sonos.Sonos('192.168.2.17')
     s.currentTrack(console.log);
 
     // sonos.Services - wrappers arounds all UPNP services provided by sonsos
@@ -22,12 +22,12 @@ This module exports 4 items:
 
     // sonos.SpotifyRegion - map with service IDs for different Spotify regions
 
-    var s = new sonos.Sonos('192.168.2.17')
+    const s = new sonos.Sonos('192.168.2.17')
     s.setSpotifyRegion(sonos.SpotifyRegion.EU);
     // OR (US is default)
     s.setSpotifyRegion(sonos.SpotifyRegion.US);
 
-### var Sonos = new sonos.Sonos(host, port) ###
+### const Sonos = new sonos.Sonos(host, port) ###
 
 Sonos "Class"
 #### Parameters ####
@@ -542,7 +542,7 @@ Get an instance of the new AlarmClock service
 Search
 ------
 
-### var Search = function Search([options]) ###
+### const Search = function Search([options]) ###
 
 Search "Class"
 Emits 'DeviceAvailable' on a Sonos Component Discovery
@@ -557,7 +557,7 @@ Listens on a random UDP port, or the specified port in options
 search
 ------
 
-### var search = sonos.search([options], [listener]) ###
+### const search = sonos.search([options], [listener]) ###
 
 Create a Search Instance (emits 'DeviceAvailable' with a found Sonos Component)
 Listens on a random UDP port, or the specified port in options

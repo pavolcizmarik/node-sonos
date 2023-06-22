@@ -23,8 +23,8 @@ sonos.setSpotifyRegion(Regions.EU)
 // This assumes you have the Spotify music service connected to
 // your Sonos system.
 
-// var spotifyUri = 'spotify:artistTopTracks:72qVrKXRp9GeFQOesj0Pmv'
-var spotifyUri = 'spotify:track:6sYJuVcEu4gFHmeTLdHzRz'
+// const spotifyUri = 'spotify:artistTopTracks:72qVrKXRp9GeFQOesj0Pmv'
+const spotifyUri = 'spotify:track:6sYJuVcEu4gFHmeTLdHzRz'
 
 sonos.play(spotifyUri)
   .then(success => {
@@ -41,8 +41,8 @@ sonos.play(spotifyUri)
 // artistName is just a string to be used in the Sonos Queue
 // as the name for the radio station playlist.
 
-// var artistId = '1dfeR4HaWDbWqFHLkxsg1d'
-// var artistName = 'Queen'
+// const artistId = '1dfeR4HaWDbWqFHLkxsg1d'
+// const artistName = 'Queen'
 
 // sonos.playSpotifyRadio(artistId, artistName).then(success => {
 //   console.log('Yeay')
